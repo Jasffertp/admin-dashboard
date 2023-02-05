@@ -6,70 +6,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="content">
-        <!-- THIS IS THE SIDEBAR OF THE PAGE -->
+        <!-- *THIS IS THE SIDEBAR OF THE PAGE -->
         <div class="sidebar">
             <div class="name">
                 <h1>Dashboard</h1>
-                <h2>This is the Dashboard of the page</h2>
+                <h2>Welcome to the Dashboard of the page</h2>
+                <hr style="width: 10rem; float: left;">
             </div>
             <div class="menu">
-                <div class="home">
-                    Home
+                <div class="menu-item">
+                    <i class="word-logo fa-solid fa-house"></i> Home
                 </div>
-                <div class="profile">
-                    Profile
+                <div class="menu-item">
+                    <i class="word-logo fa-solid fa-user"></i> Profile
                 </div>
-                <div class="message">
-                    Messages
+                <div class="menu-item">
+                    <i class="word-logo fa-solid fa-envelope"></i> Messages
                 </div>
-                <div class="tasks">
-                    Tasks
+                <div class="menu-item">
+                    <i class="word-logo fa-solid fa-list-check"></i> Tasks
                 </div>
-                <div class="community">
-                    Community
+                <div class="menu-item">
+                    <i class="word-logo fa-solid fa-tower-broadcast"></i> Community
                 </div>
+            </div>
+            <div class="sign-out" style="">
+                <h3><i class="word-logo fa-solid fa-power-off"></i> Sign out</h3>
             </div>
         </div>
 
-        <!-- THIS IS THE HEADER OF THE PAGE -->
+        <!-- * THIS IS THE HEADER OF THE PAGE -->
         <div class="header">
             <div class="header-row-1">
                 <div class="search-bar">
-                    this is the search-bar
+                    <i class="fa-solid fa-magnifying-glass"></i> 
+                    <input type="text" placeholder="Search...">
                 </div>
                 <div class="user-data">
-                    this is where the username will be
+                    <h3><i class="fa-solid fa-bell"></i> Johnny Doe</h3>
                 </div>
             </div>
             <div class="header-row-2">
                 <div class="hr-2-col-1">
                     <div class="user-greeting">
-                        this is where the greeting will be
-                    </div>
-                    <div class="user-username">
-                        username (@username)
+                        <h4>Hi there!</h4>
+                        <h3>Johnny Doe (@JohnDoes)</h3>
                     </div>
                 </div>
                 <div class="hr-2-col-2">
-                    <div class="button-1">
-                        this is the first button
+                    <div>
+                        <button class="button-click">NEW</button>
                     </div>
-                    <div class="button-2">
-                        this is the second button
+                    <div>
+                        <button class="button-click">UPLOAD</button>
                     </div>
-                    <div class="button-3">
-                        this is the third button
+                    <div>
+                        <button class="button-click">SHARE</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- THIS IS THE MAIN CONTENT OF THE WEBPAGE -->
+        <!-- * THIS IS THE MAIN CONTENT OF THE WEBPAGE -->
         <div class="main">
-            this is the main content of the page
+            <div class="main-content">
+                <h2>Your Projects</h2>
+                
+                <div class="projects">
+                    <div class="proj-card">
+                        <section>
+                            <h3>Project title</h3>
+                            <div class="proj-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque aut itaque atque molestiae velit consequatur rem quae, esse dolores unde illo aperiam voluptas aliquid expedita sit! Non, totam placeat.</p>
+                            </div>
+                        </section>
+                        <div class="share">
+                            <div class="interaction"><i class="fa-solid fa-share-nodes"></i> Share <i class="fa-solid fa-eye"></i> See <i class="fa-solid fa-star"></i> Star</div>
+                        </div>
+                    </div>
+                    <div class="proj-card">
+                        <section>
+                            <h3>Project title</h3>
+                            <div class="proj-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque aut itaque atque molestiae velit consequatur rem quae, esse dolores unde illo aperiam voluptas aliquid expedita sit! Non, totam placeat.</p>
+                            </div>
+                        </section>
+                        <div class="share" style="">
+                            <div class="interaction"><i class="fa-solid fa-share-nodes"></i> Share <i class="fa-solid fa-eye"></i> See <i class="fa-solid fa-star"></i> Star</div>
+                        </div>
+                    </div>
+                    <div class="proj-card">
+                        <section>
+                            <h3>Project title</h3>
+                            <div class="proj-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque aut itaque atque molestiae velit consequatur rem quae, esse dolores unde illo aperiam voluptas aliquid expedita sit! Non, totam placeat.</p>
+                            </div>
+                        </section>
+                        <div class="share" style="">
+                            <div class="interaction"><i class="fa-solid fa-share-nodes"></i> Share <i class="fa-solid fa-eye"></i> See <i class="fa-solid fa-star"></i> Star</div>
+                        </div>
+                    </div>
+                    <div class="proj-card">
+                        <section>
+                            <h3>Project title</h3>
+                            <div class="proj-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque aut itaque atque molestiae velit consequatur rem quae, esse dolores unde illo aperiam voluptas aliquid expedita sit! Non, totam placeat.</p>
+                            </div>
+                        </section>
+                        <div class="share" style="">
+                            <div class="interaction"><i class="fa-solid fa-share-nodes"></i> Share <i class="fa-solid fa-eye"></i> See <i class="fa-solid fa-star"></i> Star</div>
+                        </div>
+                    </div>
+                    <div class="proj-card">
+                        <section>
+                            <h3>Project title</h3>
+                            <div class="proj-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque aut itaque atque molestiae velit consequatur rem quae, esse dolores unde illo aperiam voluptas aliquid expedita sit! Non, totam placeat.</p>
+                            </div>
+                        </section>
+                        <div class="share" style="">
+                            <div class="interaction"><i class="fa-solid fa-share-nodes"></i> Share <i class="fa-solid fa-eye"></i> See <i class="fa-solid fa-star"></i> Star</div>
+                        </div>
+                    </div>
+                    <div class="proj-card">
+                        <section>
+                            <h3>Project title</h3>
+                            <div class="proj-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque aut itaque atque molestiae velit consequatur rem quae, esse dolores unde illo aperiam voluptas aliquid expedita sit! Non, totam placeat.</p>
+                            </div>
+                        </section>
+                        <div class="share" style="">
+                            <div class="interaction"><i class="fa-solid fa-share-nodes"></i> Share <i class="fa-solid fa-eye"></i> See <i class="fa-solid fa-star"></i> Star</div>
+                        </div>
+                    </div>
+                    <div class="proj-card">
+                        <section>
+                            <h3>Project title</h3>
+                            <div class="proj-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque aut itaque atque molestiae velit consequatur rem quae, esse dolores unde illo aperiam voluptas aliquid expedita sit! Non, totam placeat.</p>
+                            </div>
+                        </section>
+                        <div class="share" style="">
+                            <div class="interaction"><i class="fa-solid fa-share-nodes"></i> Share <i class="fa-solid fa-eye"></i> See <i class="fa-solid fa-star"></i> Star</div>
+                        </div>
+                    </div>
+                    <div class="proj-card">
+                        <section>
+                            <h3>Project title</h3>
+                            <div class="proj-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque aut itaque atque molestiae velit consequatur rem quae, esse dolores unde illo aperiam voluptas aliquid expedita sit! Non, totam placeat.</p>
+                            </div>
+                        </section>
+                        <div class="share" style="">
+                            <div class="interaction"><i class="fa-solid fa-share-nodes"></i> Share <i class="fa-solid fa-eye"></i> See <i class="fa-solid fa-star"></i> Star</div>
+                        </div>
+                    </div>
+                    <div class="proj-card">
+                        <section>
+                            <h3>Project title</h3>
+                            <div class="proj-desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque aut itaque atque molestiae velit consequatur rem quae, esse dolores unde illo aperiam voluptas aliquid expedita sit! Non, totam placeat.</p>
+                            </div>
+                        </section>
+                        <div class="share" style="">
+                            <div class="interaction"><i class="fa-solid fa-share-nodes"></i> Share <i class="fa-solid fa-eye"></i> See <i class="fa-solid fa-star"></i> Star</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-content">
+                <div class="side-content-text">
+                    <h2>Announcements</h2>
+                </div>
+                <div class="announcement">
+                    
+                </div>
+                <div class="side-content-text">
+                    <h2>Trending</h2>
+                </div>
+                <div class="trending">
+                    
+                </div>
+            </div>
         </div>
     </div>
 </body>
