@@ -6,6 +6,8 @@
     --light-black: #131112;
     --light-cream: #edddd4;
     --brown: #c44536;
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
 }
 
 
@@ -139,8 +141,12 @@ section >h3{
 }
 
 .announcement, .trending{
-    background-color: var(--light-black);
+    /* background-color: var(--light-cream); */
     border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: grid;
+    padding: 1rem;
+    background-color: white;
 }
 
 .side-content-text > h2{
@@ -163,6 +169,7 @@ section >h3{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     margin-bottom: 1rem;
+    color: var(--light-cream);
 }
 
 .sign-out{
@@ -274,4 +281,61 @@ section h3{
 
 .user-data h3{
     font-family: 'Poppins', sans-serif;
+}
+
+.side-content-text > h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.announcement-content{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.announcement-content > h3, .announcement-content > p, .announcement-content-last > h3, .announcement-content-last > p{
+    margin: 0;
+}
+
+.announcement-content > h3, .announcement-content-last > h3{
+    font-family: var(--poppins);
+}
+
+.announcement-content > p, .announcement-content-last > p{
+    font-family: var(--roboto);
+    font-size: .9rem;
+    opacity: .8;
+}
+
+.trending{
+    display: grid;
+    gap: 1rem;
+}
+
+.trending-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trending-content .image{
+    /* background-color: red; */
+}
+
+.trending-content .user-info{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name h3, .display-name h4{
+    margin: 0;
+}
+
+.user-name h3{
+    font-family: var(--poppins);
+}
+
+.display-name h4{
+    font-family: var(--poppins);
+    font-weight: 400;
+    opacity: .8;
 }
