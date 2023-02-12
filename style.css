@@ -25,7 +25,8 @@ body{
     width: 100vw;
     height: 100vh;
     grid-template-columns: 20vw 80vw;
-    grid-template-rows: 15vh 85vh;
+    /* grid-template-rows: 18vh 85vh; */
+    grid-template-rows: 20vh;
     padding: 0;
 }
 
@@ -45,7 +46,9 @@ body{
     display: grid;
     grid-row: 1fr 1fr;
     grid-column: 1fr;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;}
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
 
 .header-row-1, .header-row-2{
     display: flex;
@@ -147,6 +150,7 @@ section >h3{
     display: grid;
     padding: 1rem;
     background-color: white;
+    gap: .5rem;
 }
 
 .side-content-text > h2{
@@ -232,6 +236,12 @@ section >h3{
     transform: translateY(0);
 }
 
+.user-greeting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .user-greeting h3{
     font-family: 'poppins', sans-serif;
     margin: 0;
@@ -279,6 +289,28 @@ section h3{
     font-size: .9rem;
 }
 
+.user-data{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    /* margin-top: 1rem; */
+}
+
+.user-data-profile{
+    display: flex;
+    justify-content: center;
+}
+
+.user-profile-user-data{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+
+
 .user-data h3{
     font-family: 'Poppins', sans-serif;
 }
@@ -306,6 +338,10 @@ section h3{
     opacity: .8;
 }
 
+.announcement-content > p{
+    margin-bottom: 1px;
+}
+
 .trending{
     display: grid;
     gap: 1rem;
@@ -318,6 +354,9 @@ section h3{
 
 .trending-content .image{
     /* background-color: red; */
+    object-fit: contain;
+    width: 5.5rem;
+    height: 5rem;
 }
 
 .trending-content .user-info{
@@ -338,4 +377,18 @@ section h3{
     font-family: var(--poppins);
     font-weight: 400;
     opacity: .8;
+}
+
+.user-profile{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.greeting-profile .user-profile{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
